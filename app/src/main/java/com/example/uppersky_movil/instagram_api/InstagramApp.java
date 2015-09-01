@@ -1,4 +1,4 @@
-package com.example.uppersky_movil.instagram_api.other;
+package com.example.uppersky_movil.instagram_api;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,12 +13,11 @@ import org.json.JSONTokener;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import com.example.uppersky_movil.instagram_api.other.OAuthAuthenticationListener;
+import com.example.uppersky_movil.instagram_api.interfaces.OAuthAuthenticationListener;
+import com.example.uppersky_movil.instagram_api.interfaces.OAuthDialogListener;
 
 /**
  * 

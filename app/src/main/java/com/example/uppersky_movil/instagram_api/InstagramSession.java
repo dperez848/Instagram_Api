@@ -1,4 +1,4 @@
-package com.example.uppersky_movil.instagram_api.other;
+package com.example.uppersky_movil.instagram_api;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;

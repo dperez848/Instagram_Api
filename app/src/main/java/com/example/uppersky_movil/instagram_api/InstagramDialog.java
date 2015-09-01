@@ -1,4 +1,4 @@
-package com.example.uppersky_movil.instagram_api.other;
+package com.example.uppersky_movil.instagram_api;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -18,6 +18,8 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.uppersky_movil.instagram_api.interfaces.OAuthDialogListener;
 
 /**
  * Display 37Signals authentication dialog.

@@ -6,17 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.uppersky_movil.instagram_api.other.InstagramApp;
-import com.example.uppersky_movil.instagram_api.other.InstagramDialog;
-import com.example.uppersky_movil.instagram_api.other.OAuthAuthenticationListener;
+import com.example.uppersky_movil.instagram_api.interfaces.OAuthAuthenticationListener;
 import com.example.uppersky_movil.instagram_api.utils.Constants;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "Main";
     // UI
     private ListView listViewImages;
-    private InstagramAdapter customAdapter;
 
 
 
@@ -106,28 +101,5 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    private void initViews() {
-      //  listViewImages = (ListView) findViewById(R.id.listViewImagesInstagram);
-        customAdapter = new InstagramAdapter(getApplicationContext(),
-                InstagramConnector.getInstance().getImages());
-    }
-
-    private void setViews() {
-        listViewImages.setAdapter(customAdapter);
-    }
-
-    private void showInstagramDialog() {
-       // InstagramLoginDialog x = new InstagramLoginDialog();
-       // x.show(getFragmentManager(),"fragment_instagram_login");
-
-       //  InstagramDialog x = new InstagramDialog();
-       //  x.show();
-    }
-
-    public void listenerFinishInstagramConnection() {
-        Log.e("SIZE", "" + InstagramConnector.getInstance().getImages().size());
-        initViews();
-        setViews();
-    }
 
 }

@@ -1,4 +1,4 @@
-package com.example.uppersky_movil.instagram_api.other;
+package com.example.uppersky_movil.instagram_api.interfaces;
 
 /**
  * Created by UPPERSKY-MOVIL on 01/09/2015.
