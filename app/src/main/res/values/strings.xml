@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Instagram_Api</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="client_id">1850a571edf74073b75c11215bde6a8c</string>
+
+    <string name="client_secret">5925b5018e8b405db3cf63e20b0d148f</string>
+</resources>
